@@ -1,0 +1,18 @@
+The game engine your are purchasing is in very early prelimary stages. It is largely an early work in progress. The code and code structure
+reflects this early stage and so many things are incomplete or not done in an optimal way. In order to make this into
+a fully functioning game engine many things will need to be rewritten, restructured or reanalyzed. That being said it does
+serve as a good foundation for building an HTML5 MMO utilizing modern HTML5 web technologies and other modern networking
+technologies such as Node.js.
+
+At the time of purchase the engine functions as a basic demo and proof of concept with features as described in the README and as shown in the
+live demo @ http://aphelion.rakuhana.org.
+
+I have made an effort to document the code as to make it easier for any other developers hoping to continue development but I make no guarantee
+with respect to the functioning of the game engine other than the features that are described in the README.
+
+I will offer future support for basic inquires about the functioning of the game engine or different aspects about it within reason
+should you require it but I am in no way obligated to offer further support.
+
+You agree to purchase this code source as is without any gurantee.
+
+The agreed upon price is $325.

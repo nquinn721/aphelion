@@ -1,0 +1,182 @@
+[10:22:01 PM] Implementor: Warrior
+
+Starting Stats
+ STR: 2
+ INT: 0
+ WIS: 0
+ AGI: 0
+ CON: 0
+ CHA: 0
+
+ Upgrades
+ 1 STR = 1 Weight
+ 3 STR = 1-1 Damage
+ 1 INT = 1¼ TP
+ 1 WIS = 1 TP
+ 3 AGI = 1 Accuracy
+ 5 AGI = 1 Evade
+ 1 CON = 1¼ HP
+ 4 CON = 1 Armor
+
+ Pros:
+ + Highest max Weight in the game
+ + More Damage than Magicians
+ + More Damage than Rogues
+ + More Damage than Archers
+ + More Armor than Priests
+ + More Armor than Magicians
+ + More Armor than Archers
+
+ Cons:
+ - Lowest Evade in the game
+ - Less Accuracy than Magicians
+ - Less Accuracy than Rogues
+ - Less max TP than Priests
+ - Less max TP than Magicians
+
+
+
+Priest
+
+Starting Stats
+ STR: 0
+ INT: 2
+ WIS: 0
+ AGI: 0
+ CON: 0
+ CHA: 0
+
+ Upgrades
+ 1 STR = 1 Weight
+ 1 INT = 1¼ TP
+ 3 INT = 1-1 Damage
+ 1 WIS = ¾ TP
+ 3 WIS = 1 Accuracy
+ 3 AGI = 1 Evade
+ 1 CON = 1¼ HP
+ 5 CON = 1 Armor
+
+ Pros:
+ + Highest max TP in the game
+ + More Damage than Magicians
+ + More Damage than Rogues
+ + More Damage than Archers
+ + More Evade than Warriors
+
+ Cons:
+ - Less Armor than Warriors
+ - Less Armor than Rogues
+ - Less Accuracy than Magicians
+ - Less Accuracy than Rogues
+ - Less Evade than Rogues
+ - Less max Weight than Warriors
+
+
+
+Magician
+
+Starting Stats
+ STR: 0
+ INT: 0
+ WIS: 2
+ AGI: 0
+ CON: 0
+ CHA: 0
+
+ Upgrades
+ 1 STR = 1 Weight
+ 1 INT = 1¼ TP
+ 3 INT = 1-1 Damage
+ 1 WIS = ¾ TP
+ 3 WIS = 1 Accuracy
+ 4 AGI = 1 Evade
+ 1 CON = 1¼ HP
+ 5 CON = 1 Armor
+
+ Pros:
+ + More Accuracy than Priests
+ + More Damage than Rogues
+ + More Damage than Archers
+ + More Evade than Warriors
+
+ Cons:
+ - Less Damage than Warriors
+ - Less Damage than Priests
+ - Less Armor than Warriors
+ - Less Armor than Rogues
+ - Less Evade than Rogues
+ - Less max TP than Priests
+ - Less max Weight than Warriors
+
+
+
+Rogue
+
+Starting Stats
+ STR: 0
+ INT: 0
+ WIS: 0
+ AGI: 2
+ CON: 2
+ CHA: 0
+
+ Upgrades
+ 1 STR = 1 Weight
+ 5 STR = 1-1 Damage
+ 1 INT = 1¼ TP
+ 1 WIS = ¾ TP
+ 3 AGI = 1 Accuracy, 1 Evade
+ 1 CON = 1¼ HP
+ 4 CON = 1 Armor
+
+ Pros:
+ + Highest Evade in the game
+ + More Accuracy than Warriors
+ + More Accuracy than Priests
+ + More Accuracy than Archers
+ + More Damage than Archers
+
+ Cons:
+ - Less Damage than Warriors
+ - Less Damage than Priests
+ - Less Damage than Magicians
+ - Less max TP than Priests
+ - Less max TP than Magicians
+ - Less max Weight than Warriors
+
+
+
+Archer
+
+Starting Stats
+ STR: 0
+ INT: 0
+ WIS: 0
+ AGI: 2
+ CON: 0
+ CHA: 0
+
+ Upgrades
+ 1 STR = 1 Weight
+ 6 STR = 1-1 Damage
+ 1 INT = 1¼ TP
+ 1 WIS = ¾ TP
+ 4 AGI = 1 Evade
+ 5 AGI = 1 Accuracy
+ 1 CON = 1¼ HP
+ 5 CON = 1 Armor
+
+ Pros:
+ + More Evade than Warriors
+ + More Evade than Priests
+ + Able to hold bows and arrows
+
+ Cons:
+ - Lowest Damage in the Game
+ - Less Armor than Warriors
+ - Less Armor than Rogues
+ - Less Evade than Magicians
+ - Less Evade than Rogues
+ - Less max TP than Priests
+ - Less max TP than Magicians
+ - Less max Weight than Warriors

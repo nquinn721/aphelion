@@ -1,0 +1,6 @@
+Well. !bob hey is for private pm
+[5:03:27 PM] Implementor: ~ hey
+[5:03:31 PM] Implementor: Is for global chat
+[5:03:37 PM] Implementor: Hey bob is normal chat
+[5:03:53 PM] Implementor: And just use different symbols for different chats
+[5:04:05 PM] Implementor: Except $. $ is used for admin commands
