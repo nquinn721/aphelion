@@ -184,6 +184,7 @@ setInterval(function() {
 			if (hp >= max)
 				maps[i].players[j].health = max;
 			
+			// console.log(maps[i].players[j]);
 			maps[i].players[j].client.emit('increase health', {player: maps[i].players[j].data()});
 		}
 	}

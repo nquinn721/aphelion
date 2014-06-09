@@ -1,2 +1,7 @@
-
+RewriteEngine on
 Allow from all
+
+RewriteRule ^$ /Aphelion/aphelion_client
+
+
+

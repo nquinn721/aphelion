@@ -321,6 +321,11 @@ Client.prototype.connect = function() {
 						$(this).hide();
 						cc.hide();
 					});
+					setTimeout(function () {
+						$('.splash').hide();
+						cc.hide();
+						cc.find('#character-created').hide();
+					}, 1000);
 					
 					if(avail === 'full')
 						cc.find('#character-created').text('Max Reached').css('color', 'red');

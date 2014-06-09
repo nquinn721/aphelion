@@ -19,7 +19,7 @@ io.sockets.on('connection', function(client){
 	client.has_init = false;
 	
 	// Send Available Classes To Client
-	client.emit('classes', Classes.get_charcter_classes());
+	client.emit('classes', Classes.get_character_classes());
 	
 	
 	client.on('init', function(data) {
@@ -49,26 +49,30 @@ io.sockets.on('connection', function(client){
 	})
 	
 	client.on('player chosen', function(num){
-		var c = this.user.characters[num];
-		this.player = new Character(
-			this, 
-			c.class, 
-			maps[ c.map ], 
-			this.user.username, 
-			c.x, 
-			c.y, 
-			this.user.admin, 
-			c.gender, 
-			c.skin, 
-			c.experience, 
-			c.arenaKills, 
-			c.arenaDeaths, 
-			c.health,
-			this.user.account_id,
-			c.char_id
-		);
-		
-		maps[ c.map ].addPlayer(this.player);
+		var self = this;
+		db.get_characters(this.user.account_id, function (chars) {
+			var c = chars[num];
+			self.player = new Character(
+				self, 
+				c.class, 
+				maps[ c.map ], 
+				self.user.username, 
+				c.x, 
+				c.y, 
+				self.user.admin, 
+				c.gender, 
+				c.skin, 
+				c.experience, 
+				c.arenaKills, 
+				c.arenaDeaths, 
+				c.health,
+				self.user.account_id,
+				c.char_id
+			);
+			
+			maps[ c.map ].addPlayer(self.player);
+		})
+	
 	})
 	
 	// process a login

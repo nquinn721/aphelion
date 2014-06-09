@@ -107,7 +107,7 @@ Class.prototype = {
 
 }
 
-function get_charcter_classes(){
+function get_character_classes(){
 	// Character Class list
 	var character_classes = [
 		'Warrior'
@@ -151,7 +151,7 @@ function create_class(type, stats){
 }
 
 module.exports = {
-	get_charcter_classes : get_charcter_classes
+	get_character_classes : get_character_classes
 	, create_class : create_class
 	, get_character_class : get_character_class
 }

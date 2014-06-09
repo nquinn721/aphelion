@@ -17,11 +17,7 @@ mysql_client.host = 'localhost';
 mysql_client.user = 'root';//'USER';
 mysql_client.password = 'root';//'PASS';
 mysql_client.database = 'aphelion';//'DB';
-if(!mysql_client.database){
-	mysql_client.query("CREATE DATABASE aphelion");
-}
-// Create db if doesn't exist
-// mysql_client.query("CREATE DATABASE IF NOT EXISTS `aphelion`");
+
 
 // Create tables if doesn't exist
 mysql_client.query("SELECT 1 FROM accounts", function (e, r) {
@@ -32,13 +28,16 @@ mysql_client.query("SELECT 1 FROM accounts", function (e, r) {
 			"`account_id` INT(12) NOT NULL," +
 			"`email` VARCHAR(255) NOT NULL," +
 			"`username` VARCHAR(255) NOT NULL," +
+			"`password` VARCHAR(255) NOT NULL," +
+			"`gender` INT(3) NOT NULL," +
+			"`map` INT(3) NOT NULL," +
 			"`characters` INT(11) NOT NULL," +
 			"`admin` BOOLEAN NOT NULL" +
 		")");
 })
 mysql_client.query("SELECT 1 FROM characters", function (e, r) {
 	if(e)
-		mysql_client.query("CREATE TABLE IF NOT EXISTS `aphelion`.`characters` (" +
+		mysql_client.query("CREATE TABLE `characters` (" +
 		    "`id` INT(11) NOT NULL AUTO_INCREMENT," +
 		    "PRIMARY KEY(id)," +
 			"`account_id` INT(12) NOT NULL," +
@@ -53,14 +52,16 @@ mysql_client.query("SELECT 1 FROM characters", function (e, r) {
 			"`skin` INT(11) NOT NULL," +
 			"`health` INT(11) NOT NULL," +
 			"`maxHealth` INT(11) NOT NULL," +
+			"`experience` INT(255) NOT NULL," +
 			"`map` INT(11) NOT NULL," +
 			"`x` INT(11) NOT NULL," +
 			"`y` INT(11) NOT NULL," +
+			"`arenaKills` INT(12) NOT NULL," +
+			"`arenaDeaths` INT(12) NOT NULL," +
 			"`dir` VARCHAR(5) NOT NULL," +
 			"`gender` VARCHAR(5) NOT NULL" +
 		")");
 })
-
 
 module.exports = {
 
@@ -175,7 +176,7 @@ function get_characters(id, cb){
 }
 
 function create_character(cl, cb){
-	var c = Classes.get_character_class(cl.class), id = this.user.account_id;
+	var c = Classes.get_character_class(cl.class), id = this.user.account_id, self = this;
 	
 	
 	var obj = {
