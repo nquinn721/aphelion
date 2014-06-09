@@ -14,8 +14,8 @@ function bit_rol(a,b){return a<<b|a>>>32-b}function safe_add(a,b){var c=(a&65535
 var mysql_client = require('mysql').createClient();
 
 mysql_client.host = 'localhost';
-mysql_client.user = 'root';//'USER';
-mysql_client.password = '';//'PASS';
+mysql_client.user = 'b56cb47dfb38a5';//'root';
+mysql_client.password = 'e1757965';//'root';
 // mysql_client.database = 'aphelion';//'DB';
 mysql_client.database = 'heroku_7f0556c4ad1fb74';
 
