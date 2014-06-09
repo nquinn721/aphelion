@@ -1,1 +1,1 @@
-web: node aphelion_server/gameServer.js
+web: node ./aphelion_server/gameServer.js
