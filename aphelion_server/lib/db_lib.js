@@ -15,9 +15,9 @@ var mysql_client = require('mysql').createClient();
 
 mysql_client.host = 'localhost';
 mysql_client.user = 'root';//'USER';
-mysql_client.password = 'root';//'PASS';
-mysql_client.database = 'aphelion';//'DB';
-
+mysql_client.password = '';//'PASS';
+// mysql_client.database = 'aphelion';//'DB';
+mysql_client.database = 'heroku_7f0556c4ad1fb74';
 
 // Create tables if doesn't exist
 mysql_client.query("SELECT 1 FROM accounts", function (e, r) {
