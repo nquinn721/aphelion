@@ -1,3 +1,0 @@
-settings menus, logout, and character creation
-
-private chat, party chat
